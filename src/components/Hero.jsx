@@ -16,7 +16,7 @@ const Hero = () => {
         {/* Right Side: Introduction */}
         <div className="lg:w-1/2 lg:pl-10 text-center lg:text-left mt-8 lg:mt-0">
           <h1 className="text-3xl font-bold text-gray-800">
-            Welcome to [Store Name]!
+            Welcome to Lower Valley Cards!
           </h1>
           <p className="text-lg text-gray-600 mt-4">
             Your destination for trading cards, collectibles, and more.

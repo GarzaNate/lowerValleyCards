@@ -13,9 +13,9 @@ const Header = () => {
           <img
             src={logo}
             alt="Store Logo"
-            className="h-12 w-auto object-contain" // Adjust height as needed
+            className="h-16 w-auto object-contain" // Adjust height as needed
           />
-          <span className="text-lg font-bold">[Store Name]</span>
+          {/* <span className="text-lg font-bold">Lower Valley Cards</span> */}
         </div>
 
         {/* Desktop Navigation */}
