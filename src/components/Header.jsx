@@ -7,15 +7,17 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <img
-            src={logo}
-            alt="Store Logo"
-            className="h-16 w-auto object-contain" // Adjust height as needed
-          />
-          {/* <span className="text-lg font-bold">Lower Valley Cards</span> */}
+        <div className="flex items-center">
+          <Link
+            to="hero"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            <img src={logo} alt="My Store" className="h-16 md:h-16 object-contain" />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -62,7 +64,9 @@ const Header = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
