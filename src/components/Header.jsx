@@ -53,6 +53,7 @@ const Header = () => {
           className="md:hidden text-gray-700 hover:text-blue-600"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
+          {/* update svg with react-icon */}
           <svg
             className="w-6 h-6"
             fill="none"
