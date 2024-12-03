@@ -13,9 +13,9 @@ const Hero = () => {
           <p className="text-lg mb-6">
             Your one-stop shop for all things trading cards, Funkos, and exclusive collectibles.
           </p>
-          <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded shadow-lg">
+          {/* <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded shadow-lg">
             Explore Products
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

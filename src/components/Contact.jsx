@@ -33,9 +33,9 @@ const Contact = () => {
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-lg font-bold text-gray-800 mb-4">Stay Connected</h2>
           <p className="text-gray-600">
-            Email: <a href="mailto:info@collectorshaven.com" className="text-blue-600">info@collectorshaven.com</a>
+            Email: <a href="mailto:info@collectorshaven.com" className="text-blue-600">lowervalleycards@gmail.com</a>
           </p>
-          <p className="text-gray-600">Phone: +1 234 567 890</p>
+          <p className="text-gray-600">Phone: +1 (509) 515-0134</p>
           <div className="flex mt-4 space-x-4">
             {/* Social Media Links */}
             <a href="#" className="text-blue-600">

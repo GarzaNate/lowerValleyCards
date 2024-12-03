@@ -1,5 +1,6 @@
 import React from "react";
 import outsideStore from "../assets/outsideStore.jpg";
+import outsideStore2 from "../assets/outsideStore2.jpg";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
         </div>
         <div className="w-full md:w-1/2">
           <img
-            src={outsideStore}
+            src={outsideStore2}
             alt="Collectibles"
             className="rounded-lg shadow-lg"
           />

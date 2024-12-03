@@ -6,8 +6,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-lg">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 bg-white shadow-lg w-full">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-32">
         {/* Logo */}
         <div className="flex items-center">
           <Link
@@ -16,7 +16,7 @@ const Header = () => {
             duration={500}
             className="cursor-pointer"
           >
-            <img src={logo} alt="My Store" className="h-16 md:h-16 object-contain" />
+            <img src={logo} alt="Lower Valley Cards" className="h-24 object-contain" />
           </Link>
         </div>
 
@@ -53,7 +53,6 @@ const Header = () => {
           className="md:hidden text-gray-700 hover:text-blue-600"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {/* update svg with react-icon */}
           <svg
             className="w-6 h-6"
             fill="none"
@@ -74,7 +73,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+          <div className="absolute top-32 left-0 w-full bg-white shadow-md md:hidden">
             <nav className="flex flex-col items-center space-y-4 py-4">
               <Link
                 to="about"

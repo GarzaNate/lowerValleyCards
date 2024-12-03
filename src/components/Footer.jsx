@@ -1,3 +1,6 @@
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-6">
@@ -5,35 +8,25 @@ const Footer = () => {
         <div className="flex justify-between items-center">
           {/* Store Information */}
           <div className="text-sm">
-            <p>&copy; {new Date().getFullYear()} My Store. All rights reserved.</p>
-            <p>123 Store Address, City, State, ZIP</p>
+            <p>
+              &copy; {new Date().getFullYear()} Lower Valley Cards. All rights reserved.
+            </p>
+            <p>1805 S 1st St Ste B, Sunnyside, WA 98944</p>
           </div>
 
           {/* Social Media Links */}
           <div className="flex space-x-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-600"
+              href="https://www.facebook.com/people/Lower-Valley-Cards/61567735154491/"
+              className="text-white text-3xl"
             >
-              <i className="fab fa-facebook-f text-xl"></i>
+              <FaFacebook />
             </a>
             <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-600"
+              href="https://www.instagram.com/lowervalleycards/"
+              className="text-white text-3xl"
             >
-              <i className="fab fa-twitter text-xl"></i>
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-600"
-            >
-              <i className="fab fa-instagram text-xl"></i>
+              <FaInstagram />
             </a>
           </div>
         </div>
