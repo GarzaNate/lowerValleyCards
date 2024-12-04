@@ -20,7 +20,7 @@ const About = () => {
         <div className="w-full md:w-1/2">
           <img
             src={outsideStore2}
-            alt="Collectibles"
+            alt="Outside of Lower Valley Cards"
             className="rounded-lg shadow-lg"
           />
         </div>

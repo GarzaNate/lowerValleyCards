@@ -34,12 +34,12 @@ const Header = () => {
           >
             Contact
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/about"
             className="text-gray-800 hover:text-blue-600 transition-all duration-300"
           >
             About
-          </NavLink>
+          </NavLink> */}
         </nav>
 
         {/* Right: Store Hours and Social Icons */}
@@ -48,21 +48,22 @@ const Header = () => {
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/people/Lower-Valley-Cards/61567735154491/"
-              className="text-3xl"
+              className="text-4xl"
             >
               <FaFacebook />
             </a>
             <a
               href="https://www.instagram.com/lowervalleycards/"
-              className="text-3xl"
+              className="text-4xl"
             >
               <FaInstagram />
             </a>
           </div>
           {/* Store Hours */}
-          <div className="text-gray-600 text-sm">
-            <p>Mon-Fri: 10 AM - 6 PM</p>
-            <p>Sat-Sun: 12 PM - 5 PM</p>
+          <div className="text-bold text-sm">
+            <p>Mon: Closed</p>
+            <p>Tues-Fri: 11:00 AM - 5:30 PM</p>
+            <p>Sat-Sun: 11:00 AM - 4:00 PM</p>
           </div>
         </div>
 
