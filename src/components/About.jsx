@@ -9,13 +9,11 @@ const About = () => {
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
           <p className="text-gray-600 mb-6">
-            Here at Lower Valley Cards, we bring collectors the best in trading cards, Funkos,
-            and rare collectibles. Our mission is to connect enthusiasts with
-            high-quality, exclusive items.
+          Welcome to Lower Valley Cards, your ultimate destination for sports cards, collectibles, and memorabilia! Whether you're a seasoned collector or just starting out, we're here to celebrate your passion and help you find that perfect treasure. We can't wait to welcome you. God bless.
           </p>
-          <p className="text-gray-600">
+          {/* <p className="text-gray-600">
           Whether you're a seasoned collector or just starting out, we're here to celebrate your passion and help you find that perfect treasure. We can't wait to welcome you. God bless.
-          </p>
+          </p> */}
         </div>
         <div className="w-full md:w-1/2">
           <img
