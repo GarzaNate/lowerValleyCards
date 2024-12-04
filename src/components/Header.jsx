@@ -1,52 +1,70 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg w-full">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-32">
-        {/* Logo */}
+      <div className="flex items-center justify-between h-32 px-4 sm:px-6 lg:px-8">
+        {/* Left: Logo */}
         <div className="flex items-center">
-          <Link
-            to="hero"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer"
-          >
-            <img src={logo} alt="Lower Valley Cards" className="h-24 object-contain" />
-          </Link>
+          <NavLink to="/" className="cursor-pointer">
+            <img
+              src={logo}
+              alt="Lower Valley Cards"
+              className="h-24 object-contain"
+            />
+          </NavLink>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Center: Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
+          <NavLink
+            to="/"
+            className="text-gray-800 hover:text-blue-600 transition-all duration-300"
           >
-            About
-          </Link>
-          <Link
-            to="products"
-            smooth={true}
-            duration={500}
-            className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
-          >
-            Products
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
+            Home
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className="text-gray-800 hover:text-blue-600 transition-all duration-300"
           >
             Contact
-          </Link>
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="text-gray-800 hover:text-blue-600 transition-all duration-300"
+          >
+            About
+          </NavLink>
         </nav>
+
+        {/* Right: Store Hours and Social Icons */}
+        <div className="hidden md:flex items-center space-x-6">
+          {/* Social Icons */}
+          <div className="flex space-x-4">
+            <a
+              href="https://www.facebook.com/people/Lower-Valley-Cards/61567735154491/"
+              className="text-3xl"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/lowervalleycards/"
+              className="text-3xl"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+          {/* Store Hours */}
+          <div className="text-gray-600 text-sm">
+            <p>Mon-Fri: 10 AM - 6 PM</p>
+            <p>Sat-Sun: 12 PM - 5 PM</p>
+          </div>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -75,33 +93,27 @@ const Header = () => {
         {isMenuOpen && (
           <div className="absolute top-32 left-0 w-full bg-white shadow-md md:hidden">
             <nav className="flex flex-col items-center space-y-4 py-4">
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
+              <NavLink
+                to="/"
+                className="text-gray-800 hover:text-blue-600 transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
-              </Link>
-              <Link
-                to="products"
-                smooth={true}
-                duration={500}
-                className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Products
-              </Link>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                className="text-gray-800 hover:text-blue-600 transition-all duration-300 cursor-pointer"
+                Home
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className="text-gray-800 hover:text-blue-600 transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </Link>
+              </NavLink>
+              <NavLink
+                to="/about"
+                className="text-gray-800 hover:text-blue-600 transition-all duration-300"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </NavLink>
             </nav>
           </div>
         )}
