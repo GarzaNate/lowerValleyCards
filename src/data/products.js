@@ -16,73 +16,73 @@ import WWECards from '../assets/images/cards/WWECards.jpg';
 const products = [
     {
         "id": 1,
-        "title": "Product 1",
+        "title": "Pokemon: 151 Japanese Booster Box (sv2a)",
         "image": pokemon1,
         "price": 100
     },
     {
         "id": 2,
-        "title": "Product 2",
+        "title": "2024 Panini Prestige Football Blaster Box",
         "image": footballBox,
         "price": 200
     },
     {
         "id": 3,
-        "title": "Product 3",
+        "title": "One Piece TCG: Two Legends Booster Box [OP-08]",
         "image": OPBox1,
         "price": 300
     },
     {
         "id": 4,
-        "title": "Product 4",
+        "title": "Magic the Gathering: Universes Beyond Assassin's Creed Beyond Booster Box",
         "image": MTGAC,
         "price": 400
     },
     {
         "id": 5,
-        "title": "Product 5",
+        "title": "Magic The Gathering: Bloomburrow Play Booster Box",
         "image": MTGBox,
         "price": 500
     },
     {
         "id": 6,
-        "title": "Product 6",
+        "title": "2023-24 Topps Chrome Baseball Mega (Monster) Box",
         "image": topsBox1,
         "price": 600
     },
     {
         "id": 7,
-        "title": "Product 7",
+        "title": "2024 Topps Chrome Baseball Blaster Box",
         "image": topsBox2,
         "price": 700
     },
     {
         "id": 8,
-        "title": "Product 8",
+        "title": "2024 Topps Holiday Baseball Mega Box",
         "image": topsBox3,
         "price": 800
     },
     {
         "id": 9,
-        "title": "Product 9",
+        "title": "2023 Panini Contedners Football Blaster Box",
         "image": footballCards,
         "price": 900
     },
     {
         "id": 10,
-        "title": "Product 10",
+        "title": "2023-24 Panini Phoenix Blaster Box",
         "image": NBACards,
         "price": 1000
     },
     {
         "id": 11,
-        "title": "Product 11",
+        "title": "2024 Topps Chrome UFC Blaster Box",
         "image": UFC,
         "price": 1100
     },
     {
         "id": 12,
-        "title": "Product 12",
+        "title": "2023 Panini Prizm WWE Blaster Box",
         "image": WWECards,
         "price": 1200
     }

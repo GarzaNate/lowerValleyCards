@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-lg w-full">
+    <header className="top-0 z-50 bg-white shadow-lg w-full">
       <div className="flex items-center justify-between h-32 px-4 sm:px-6 lg:px-8">
         {/* Left: Logo */}
         <div className="flex items-center">
