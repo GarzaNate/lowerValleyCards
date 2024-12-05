@@ -1,4 +1,4 @@
-import insideStore from "../assets/insideStore.jpg";
+import insideStore from "../assets/images/insideStore.jpg";
 
 const Hero = () => {
   return (
