@@ -1,19 +1,16 @@
-import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import ProductCard from '../components/ProductSection'
-import Contact from './Contact'
-import Footer from '../components/Footer'
+import React from "react";
+import Hero from "../components/Hero";
+import ProductCard from "../components/ProductSection";
+import Location from "../components/Location";
 
 const Home = () => {
   return (
     <div>
-      {/* <Header /> */}
       <Hero />
       <ProductCard />
-      {/* <Footer /> */}
+      <Location />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

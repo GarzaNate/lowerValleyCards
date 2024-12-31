@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-sm">123-456-7890</p>
+            <p className="text-sm">+1 509 515 0134</p>
             <p className="text-sm">
               1805 S 1st St Ste B, Sunnyside, WA 98944
             </p>

@@ -1,49 +1,77 @@
 import React from "react";
-import { FaInstagram, FaFacebook } from "react-icons/fa6";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <section className="min-h-screen bg-gray-50 py-16 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Contact Form */}
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-          <p className="text-gray-600 mb-6">
-            Have questions or inquiries? Fill out the form below, and we’ll get
-            back to you shortly.
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-3xl font-extrabold text-gray-800 mb-6">
+            Get in Touch
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Have questions? We'd love to hear from you! Fill out the form below
+            and we’ll respond as soon as we can.
           </p>
           <form
-            className="space-y-4"
+            className="space-y-6"
             onSubmit={(e) => {
               e.preventDefault();
-              // EmailJS logic goes here
-              alert("Message sent!");
+              alert("Your message has been sent!");
             }}
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-              required
-              className="w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                className="w-full mt-1 px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                className="w-full mt-1 px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message"
+                rows="5"
+                required
+                className="w-full mt-1 px-4 py-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              ></textarea>
+            </div>
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-500 transition"
+              className="w-full py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-all"
             >
               Send Message
             </button>
@@ -51,49 +79,75 @@ const Contact = () => {
         </div>
 
         {/* Store Information */}
-        <div className="space-y-8">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Our Store</h3>
-            <p className="text-gray-600">
-              <strong>Address:</strong> 1805 S 1st St Ste B, Sunnyside, WA 98944
-            </p>
-            <p className="text-gray-600">
-              <strong>Phone:</strong> +1 (509) 515-0134
-            </p>
-            <p className="text-gray-600">
-              <strong>Email:</strong>{" "}
-              <a
-                href="mailto:lowervalleycards@gmail.com"
-                className="text-blue-600 hover:underline"
-              >
-                lowervalleycards@gmail.com
-              </a>
-            </p>
+        <div className="flex flex-col space-y-8">
+          {/* Address and Contact Info */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Store</h3>
+            <ul className="text-gray-600 space-y-3">
+              <li>
+                <strong>Address:</strong> 1805 S 1st St Ste B, Sunnyside, WA
+                98944
+              </li>
+              <li>
+                <strong>Phone:</strong>{" "}
+                <a
+                  href="tel:+15095150134"
+                  className="text-blue-600 hover:underline"
+                >
+                  +1 (509) 515-0134
+                </a>
+              </li>
+              <li>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:lowervalleycards@gmail.com"
+                  className="text-blue-600 hover:underline"
+                >
+                  lowervalleycards@gmail.com
+                </a>
+              </li>
+            </ul>
           </div>
 
-          {/* Social Links */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">
+          {/* Social Media Links */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
               Connect with Us
             </h3>
-            <div className="flex space-x-6">
+            <p className="text-gray-600 mb-6">
+              Follow us on social media to stay updated with the latest
+              arrivals, events, and more!
+            </p>
+            <div className="flex space-x-6 justify-center lg:justify-start">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-600 hover:text-blue-800 transition-all duration-300"
+                className="text-neutral-dark"
               >
-                <FaFacebook className="w-6 h-6" />
+                <FaFacebook className="w-8 h-8" />
               </a>
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="text-blue-600 hover:text-blue-800 transition-all duration-300"
+                className="text-neutral-dark"
               >
-                <FaInstagram className="w-6 h-6" />
+                <FaInstagram className="w-8 h-8" />
               </a>
             </div>
+          </div>
+
+          {/* Business Hours */}
+          <div className="bg-white p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Store Hours
+            </h3>
+            <ul className="text-gray-600 space-y-2">
+              <li>Mon: Closed</li>
+              <li>Tues-Fri: 11:00 AM - 5:30 PM</li>
+              <li>Sat-Sun: 11:00 AM - 4:00 PM</li>
+            </ul>
           </div>
         </div>
       </div>
