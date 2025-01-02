@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -118,22 +119,15 @@ const Contact = () => {
               Follow us on social media to stay updated with the latest
               arrivals, events, and more!
             </p>
-            <div className="flex space-x-6 justify-center lg:justify-start">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                className="text-neutral-dark"
-              >
-                <FaFacebook className="w-8 h-8" />
+            <div className="flex space-x-4 justify-center lg:justify-start">
+            <a href="https://www.facebook.com/people/Lower-Valley-Cards/61567735154491/" className="text-3xl">
+                <FaFacebook />
               </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                className="text-neutral-dark"
-              >
-                <FaInstagram className="w-8 h-8" />
+              <a href="https://www.instagram.com/lowervalleycards/" className="text-3xl">
+                <FaInstagram />
+              </a>
+              <a href="https://www.tiktok.com/@lowervalleycards" className="text-3xl">
+                <AiFillTikTok />
               </a>
             </div>
           </div>
