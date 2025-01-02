@@ -3,7 +3,7 @@ import pokemon1 from '../assets/images/cards/pokemon1.jpg';
 import footballBox from '../assets/images/boxes/footballBox.jpg';
 import OPBox1 from '../assets/images/boxes/OPBox1.jpg';
 import MTGAC from '../assets/images/boxes/MTGACBox.jpg';
-import MTGBox from '../assets/images/boxes/MTGBox.jpg';
+// import MTGBox from '../assets/images/boxes/MTGBox.jpg';
 // import topsBox1 from '../assets/images/boxes/topsBox.jpg';
 import topsBox2 from '../assets/images/boxes/topsBox2.jpg';
 import topsBox3 from '../assets/images/boxes/topsBox3.jpg';
