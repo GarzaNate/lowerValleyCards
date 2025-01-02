@@ -1,8 +1,34 @@
 import React from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Your EmailJS service ID
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Your EmailJS template ID
+        e.target,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Your EmailJS public API key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          console.log("Email sent:", result.text);
+        },
+        (error) => {
+          alert("Failed to send message. Please try again.");
+          console.error("Error:", error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
+
   return (
     <section className="min-h-screen bg-gray-50 py-16 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -17,10 +43,7 @@ const Contact = () => {
           </p>
           <form
             className="space-y-6"
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Your message has been sent!");
-            }}
+            onSubmit={sendEmail}
           >
             <div>
               <label
