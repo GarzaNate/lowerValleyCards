@@ -4,7 +4,7 @@ import outsideStore2 from "../assets/images/outsideStore2.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-8 bg-gray-100">
+    <section id="about" className="min-h-full py-16 px-8 bg-gray-100">
       <div className="max-w-6xl mx-auto flex flex-wrap items-center">
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
