@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
