@@ -1,5 +1,5 @@
 import React from "react";
-import outsideStore from "../assets/images/outsideStore.jpg";
+// import outsideStore from "../assets/images/outsideStore.jpg";
 import outsideStore2 from "../assets/images/outsideStore2.jpg";
 
 const About = () => {
